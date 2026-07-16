@@ -184,3 +184,100 @@ iframe {
     margin-left: 20px;
     margin-bottom: 15px;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1.8em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1.2em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    #my_drawings .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .project_img, .art_img {
+        max-width: 100%;
+    }
+    
+    .sticker {
+        width: 80px;
+    }
+    
+    .gif-topright {
+        width: 100px;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .music {
+        height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    p {
+        font-size: 0.95em;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    #my_drawings .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .sticker {
+        width: 60px;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+    
+    .gif-topright {
+        width: 80px;
+        top: 8px;
+        right: 8px;
+    }
+    
+    ul {
+        padding-left: 15px;
+    }
+    
+    li {
+        margin-bottom: 15px;
+    }
+}
