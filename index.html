@@ -6,13 +6,16 @@
 </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>LAYA VERSE</title>
 </head>
-<script src="hello.js"></script>
+
 <body>
+    <div class="cursor"></div>
     <div class="container">
-        <h1>HELLO WORLD</h1>
+        <h1>HELLO WORLD
+            <img src="my art work/cloud.pixel.png" alt="cloud" class="cloud">
+        </h1>
         <h2>Laya here!</h2>
         <p>Welcome to my portfolio...(^^)
             Glad to meet you!
@@ -94,15 +97,15 @@
             <h3>✿Music</h3>
             <h4>My TOP3 pics:</h4>
             <ul>
-                <li>Barqat by Satyam
+                <li><h4>Barqat by Satyam</h4>
                     <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/1fx9LoCoaGbmJmaeTX66Lw?utm_source=generator&si=f2e31886d61d4688" class="music"></iframe>
                     <p>"Barqat" means blessing and its on top of my playlist recently. It's a beatiful song and I feel its under-rated and I want this artist to be known</p>
                 </li>
-                <li>Jeet lena by Yuvi
+                <li><h4>Jeet lena by Yuvi</h4>
                     <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/3Tt09st50N0spANuJmTxqh?utm_source=generator&si=ee602fa3975f4874" class="music"></iframe>
                     <p>"Jeet lena" is by yuvi an emerging artist and I love all his songs.</p>
                 </li>
-                <li>Khahe moose by Garvit - Priyansh
+                <li><h4>Khahe moose by Garvit - Priyansh</h4>
                    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/5A8RUsECb6rmFAFeMwZXVT?utm_source=generator&theme=0&si=4a477907ef8648ed" class="music"></iframe>
                     <p>"Khahe moose" is a song that I love and I feel it is under-rated and I want this artist to be known</p>
 
@@ -118,5 +121,23 @@
             </ul>
         </div>
     </div>
+    <script>
+
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+           cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+e.pageX+"px; left: "+(e.pageX - 10)+"px;" )
+        })
+        document.addEventListener("click", () => {
+            cursor.classList.add("expand"); 
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500);
+        })
+        
+    </script>
+    <footer>
+        <p>&copy; 2026 My Portfolio. Made with ♡ by LAYA</p>
+    </footer>
 </body>
 </html>
