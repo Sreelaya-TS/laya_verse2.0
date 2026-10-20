@@ -13,6 +13,9 @@ body {
     color: #000000;
     background-color: #f7bcee;
     cursor: url("../my art work/shiro.png") 16 16, pointer;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .container {
