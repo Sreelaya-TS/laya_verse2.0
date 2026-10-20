@@ -15,7 +15,7 @@ body {
     cursor: url("../my art work/shiro.png") 16 16, pointer;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .container {
@@ -33,6 +33,9 @@ body {
 h1, h2, h3 {
     margin-top: 10px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
